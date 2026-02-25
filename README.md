@@ -27,7 +27,7 @@ job_portal/
 │     ├── index.html
 │     ├── apply.html
 │     ├── saved.html
-│     ├── admin_login.html   ← MUST BE HERE
+│     ├── admin_login.html
 │     ├── admin_dashboard.html
 │     └── add_job.html
 │
