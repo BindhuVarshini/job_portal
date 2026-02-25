@@ -16,3 +16,19 @@ This is a full-stack Job/Internship Listing Portal developed using Python (Flask
 - HTML
 - CSS
 - JavaScript
+##folder Structure
+job_portal/
+│
+├── app.py
+│
+├── templates/
+│     ├── index.html
+│     ├── apply.html
+│     ├── saved.html
+│     ├── admin_login.html   ← MUST BE HERE
+│     ├── admin_dashboard.html
+│     └── add_job.html
+│
+├── static/
+│     ├── style.css
+│     └── script.js
