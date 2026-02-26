@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Job</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="apply-container">
+    <div class="apply-card">
+        <h2>Apply for This Job</h2>
+        <p class="subtitle">Fill the details carefully before submitting</p>
+
+        <form action="/submit/{{ job_id }}" method="POST" enctype="multipart/form-data">
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Upload Resume</label>
+                <input type="file" name="resume" required>
+            </div>
+
+            <div class="input-group">
+                <label>Cover Letter</label>
+                <textarea name="cover" rows="4" placeholder="Write a short cover letter..." required></textarea>
+            </div>
+
+            <button type="submit" class="apply-btn">Submit Application</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

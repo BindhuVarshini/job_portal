@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Job</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="apply-container">
+    <div class="apply-card">
+        <h2>Add New Job</h2>
+
+        <form action="/insert_job" method="POST">
+            <input type="text" name="title" placeholder="Job Title" required><br><br>
+            <input type="text" name="company" placeholder="Company" required><br><br>
+            <input type="text" name="location" placeholder="Location" required><br><br>
+            <input type="text" name="salary" placeholder="Salary" required><br><br>
+            <input type="text" name="type" placeholder="Job Type" required><br><br>
+            <input type="text" name="category" placeholder="Category" required><br><br>
+            <input type="text" name="skills" placeholder="Skills" required><br><br>
+            <textarea name="description" placeholder="Description" required></textarea><br><br>
+            <button class="apply-btn">Add Job</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
